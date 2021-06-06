@@ -1,0 +1,23 @@
+Algoritmo Ejercicio6
+	contadormenor25 <- 0
+	contadormayor25 <- 0
+	acumuladormenor <- 0
+	acumuladormayor <- 0
+	Para i<-1 Hasta 100 Hacer
+		numero <- Aleatorio(0,100)
+		Escribir 'Edad de la persona ',i,': ',numero
+		Si (numero<25) Entonces
+			contadormenor25 <- contadormenor25+1
+			acumuladormenor <- acumuladormenor+numero
+		SiNo
+			contadormayor25 <- contadormayor25+1
+			acumuladormayor <- acumuladormayor+numero
+		FinSi
+	FinPara
+	Escribir 'total de personas menores de 25 anios: ',contadormenor25
+	Escribir 'total de personas mayores o iguales a 25 anios: ',contadormayor25
+	promediomenor <- acumuladormenor/contadormenor25
+	promediomayor <- acumuladormayor/contadormayor25
+	Escribir 'El promedio de edades menores a 25 es: ',promediomenor
+	Escribir 'El promedio de edades mayores o iguales a 25 es: ',promediomayor
+FinAlgoritmo
